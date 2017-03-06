@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* { margin:0; padding:0 }
+
+body{
+   font-family: 'Open Sans',serif;
+}
+
+h1 {
+    text-align: left;
+	margin-top: 20px;
+}
+
+.h3pretty { 
+	margin:0; padding:0; 
+}
+
+.ulpretty {
+	margin-top: 0px;
+	margin-left: 20px;
+	padding-top: 0px;	
+	list-style-image: url("../Resume website/bullet.jpg");
+}
+
+.ulbar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #333;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	width: 100%;
+}
+
+li {
+	float: left;
+}
+
+li a, .dropbtn {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+/*test starts here*/
+#mainBox {
+    margin: 0;
+    width: 100%;
+	overflow: auto;	
+}
+
+#sidebarIMG {
+	margin: 20px;
+	text-align: center;
+}
+
+#mainBox .lrgColumnG { /*gray box*/
+    float: left;
+    margin: 0;
+    width: 252px;		
+	/*background-color: gray;*/
+	margin-right: 0px;
+	/*background-image: url('../Resume website/SBbackground.jpg');*/
+	background-color: #2C3A3D;;
+	box-shadow: 5px -10px 20px #2C3A3D;
+}
+
+#mainBox .lrgColumnB { /*blue box*/
+    float: left;
+    margin-left: 28px;
+    width: 70%;		
+	background-color: #717A8B;
+}
+/*test ends here*/
+
+#contentBox {
+    margin: 0;
+    width: 70%;
+	overflow: auto;
+}
+
+#contentBox .column {
+    float: left;
+    margin: 0;
+    width: 50%;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+	background-color: green;
+}
+
+li.dropdown {
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.dropdown-content a:hover {
+	background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdownnotoption {
+	border-bottom: solid;
+	border-top: solid;	
+	border-width: 1px; 
+	border-color:black;
+	background-color: gray;	
+}
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+	border-color: purple;
+
+}
+
+.img-circle {
+	border-radius: 50%;
+}
+
+.bgimg {
+	background-color: #717A8B;
+	/*background-image: url('../Resume website/background.jpg');*/
+}
+
+.nameplate {
+	background-image: url('../Resume website/steel.jpg');/*borrowed from background website https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwiO1J7Tg6zSAhWh3YMKHVWqCwYQjhwIBQ&url=http%3A%2F%2Fmore-sky.com%2Fgroup%2Fcool-background-picture%2F&psig=AFQjCNHBIAnpIFtB8DmnH_p1iqSOmx1YTQ&ust=1488138866983419*/
+	/*text-align: center;*/
+	left: 0px;
+	right: 0px;
+}
+
+.nameplatediv {
+	text-align: center;
+	text-align: center;
+	top: center;
+}
+
+.nameplatetxt{
+		float: left;
+		color: white;
+}
+
+#myProgress {
+	width: 100%;
+	/*background-color: grey;*/
+    border-radius: 25px;
+
+}
+
+.bar {
+	width: 1%;
+	height: 30px;
+	margin: 10px;
+	background-image: url('../Resume website/bar.jpg');
+    border-radius: 25px;	
+}
+
+.bartext {
+    top: 10%;
+	padding-left: 20px;
+	color: white;
+}
+
+.pcenter {
+	text-align: center;
+	margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Borrowed from h3schools.com*/
+/* Popup container - can be anything you want */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
