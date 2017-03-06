@@ -25,7 +25,7 @@ footer {
 	margin-top: 0px;
 	margin-left: 20px;
 	padding-top: 0px;	
-	list-style-image: url("../appSite/bullet.jpg");
+	list-style-image: url("../appSite/images/bullet.jpg");
 }
 
 .ulbar {
@@ -190,7 +190,7 @@ hr {
 	width: 1%;
 	height: 30px;
 	margin: 10px;
-	background-image: url('../appSite/bar.jpg');
+	background-image: url('../appSite/images/bar.jpg');
     border-radius: 25px;	
 }
 
