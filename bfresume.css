@@ -11,6 +11,12 @@ h1 {
 	margin-top: 20px;
 }
 
+footer {
+	padding: 20px;
+	background-color: #333;
+	color: white;
+}
+
 .h3pretty { 
 	margin:0; padding:0; 
 }
@@ -19,7 +25,7 @@ h1 {
 	margin-top: 0px;
 	margin-left: 20px;
 	padding-top: 0px;	
-	list-style-image: url("../Resume website/bullet.jpg");
+	list-style-image: url("../appSite/bullet.jpg");
 }
 
 .ulbar {
@@ -127,7 +133,12 @@ li.dropdown {
 	border-top: solid;	
 	border-width: 1px; 
 	border-color:black;
-	background-color: gray;	
+	background-color: #333;	
+	color: white;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
 }
 
 hr {
@@ -151,7 +162,7 @@ hr {
 }
 
 .nameplate {
-	background-image: url('../Resume website/steel.jpg');/*borrowed from background website https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwiO1J7Tg6zSAhWh3YMKHVWqCwYQjhwIBQ&url=http%3A%2F%2Fmore-sky.com%2Fgroup%2Fcool-background-picture%2F&psig=AFQjCNHBIAnpIFtB8DmnH_p1iqSOmx1YTQ&ust=1488138866983419*/
+	background-image: url('../appSite/steel.jpg');/*borrowed from background website https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwiO1J7Tg6zSAhWh3YMKHVWqCwYQjhwIBQ&url=http%3A%2F%2Fmore-sky.com%2Fgroup%2Fcool-background-picture%2F&psig=AFQjCNHBIAnpIFtB8DmnH_p1iqSOmx1YTQ&ust=1488138866983419*/
 	/*text-align: center;*/
 	left: 0px;
 	right: 0px;
@@ -179,7 +190,7 @@ hr {
 	width: 1%;
 	height: 30px;
 	margin: 10px;
-	background-image: url('../Resume website/bar.jpg');
+	background-image: url('../appSite/bar.jpg');
     border-radius: 25px;	
 }
 

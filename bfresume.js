@@ -1,5 +1,5 @@
-skills = [80, 70, 50, 50];
-skillNum = 4;
+skills = [80, 70, 50, 50, 100];
+skillNum = 5;
 
 window.onload = function() {
 	function setNamePlate(x){
