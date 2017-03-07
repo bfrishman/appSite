@@ -1,30 +1,33 @@
 <!DOCTYPE html>
-<script src="bfresume.js"></script>
 <HTML>
    <HEAD>
-
       <TITLE>
          Benjamin Frishman
       </TITLE>
 	  <link rel="stylesheet" type="text/css" href="bfresume.css">
 	  <link rel="SHORTCUT ICON" href="favicon.ico" type="image/x-icon" />
+	  <!--<script src="node_modules/jquery/dist/jquery.min.js"></script>-->
+	  <script src="bfresume.js"></script>
+	  <!--<script type="text/javascript">
+		window.onload = function() {
+			$(document).ready(function(){
+					$("#skills").click(function(){
+					console.log("Hello");
+					$("#place").load("skills.html");
+				});
+			});
+		}
+        </script>-->
    </HEAD>
    
 <BODY>
 	<body class="bgimg">
 	<ul class="ulbar" id="myNavBar">
-	  <li><a href="#skills">Skills</a></li>
+	  <li></li>
 	  <li><a href="#education">Education</a></li>	  
 	  <li><a href="#experience">Work Experience</a></li>
 	  <li><a href="#about">About Me</a></li>
-	  <li><a href="#readings">Readings</a></li>
-	  
-	  
-	  <li class="popup" onclick="myFunction()"><a href="#where">Where I Work</a>
-	  <span class="popuptext" id="myPopup">A Simple Popup!</span></li>	 
-
-	  
-	 
+	  <li><a href="#school">Schoolwork</a></li>	  
 	  <li class="dropdown">
 		<a href="javascript:void(0)" class="dropbtn">Social Media</a>
 		<div class="dropdown-content">
@@ -59,8 +62,6 @@
 	  </li>
 	</ul>
 
-
-
 <div id="mainBox">	
 	<div id="sidebar" class="lrgColumnG">
 		<div id="sidebarIMG"><img class="img-circle" src="images/profile.jpg"></div>
@@ -68,15 +69,15 @@
 		<hr/ style="width: 80%; text-align: center; border-color: white; margin: auto;">
 		<table style="width:100%; color: white; margin-top: 20px; margin-bottom: 20px;">
 			<tr>
-				<th><img src="images/home.jpg" style="margin-left: 20px;"></th>
+				<th><img src="images/home.jpg" style="margin-left: 10px;"></th>
 				<th>Houston, Tx - specifics available upon request</th> 		
 			</tr>
 			<tr>
-				<th><img src="images/email.jpg" style="margin-left: 20px;"></th>
+				<th><img src="images/email.jpg" style="margin-left: 10px;"></th>
 				<th>bfrishman@gmail</th> 	
 			</tr>	
 			<tr>
-				<th><img src="images/phone.jpg" style="margin-left: 20px;"></th>
+				<th><img src="images/phone.jpg" style="margin-left: 10px;"></th>
 				<th>713-252-6444</th> 	
 			</tr>		
 		</table>		
@@ -84,46 +85,48 @@
 		<p style="color: white; margin: 20px;">Thanks for visiting my site! Feel free to email me if you would like to work together, have suggestions, or would just like to talk.</p>
 	</div>
 	<div class="lrgColumnB">
-		<h1 style="color: red; background-color: yellow;">~Warning: This site is in the early stages of development. More to come and in progress!~</h1>
 		<a name="skills">
 			<div>
-				<h1>Skills</h1>
+				<h1 class="section">Skills</h1>
 				<hr/>
-				<h2>Languages</h2>
-				<div id="myProgress">
-				  <div id="thisBar1" class="bar"><p class="bartext">JavaScript</p></div>
-				  <div id="thisBar2" class="bar"><p class="bartext">C++</p></div>
-				  <div id="thisBar3" class="bar"><p class="bartext">HTML</p></div>
-				  <div id="thisBar4" class="bar"><p class="bartext">CSS</p></div>	
-				  <div id="thisBar5" class="bar"><p class="bartext">Ability To Learn</p></div>					  
-				</div>	
-				<h2>Other Skills</h2>			
-				<p>Other languages used: Java, Python, C, PHP, C#</p></br>
-				<p>Some other technology used: Node, MASM, VIM, and UNIX/Linux. MySQL, Google App Engine’s DB, REDIS and many more. Familiar with Google Cloud and AWS, Git, GitHub, Wireshark, Pingplotter, Putty, FileZilla</p></br>
-				<p>Assorted Skills: Object Oriented Programming, Restful APIs, Agile and Waterfall methodologies</p></br>
+				<div style="margin-left: 20px; margin-bottom: 20px;">
+					<h2>Languages</h2>
+					<div id="myProgress">
+					  <div id="thisBar1" class="bar"><p class="bartext">JavaScript</p></div>
+					  <div id="thisBar2" class="bar"><p class="bartext">C++</p></div>
+					  <div id="thisBar3" class="bar"><p class="bartext">HTML</p></div>
+					  <div id="thisBar4" class="bar"><p class="bartext">CSS</p></div>	
+					  <div id="thisBar5" class="bar"><p class="bartext">Ability To Learn</p></div>					  
+					</div>	
+					<h2>Other Skills</h2>			
+					<p>Other languages used: Java, Python, C, PHP, C#</p></br>
+					<p>Some other technology used: Visual Studio, Node, MASM, VIM, and UNIX/Linux. MySQL, Google App Engine’s DB, REDIS and many more. Familiar with Google Cloud and AWS, Git, GitHub, Wireshark, Pingplotter, Putty, FileZilla</p></br>
+					<p>Assorted Skills: Object Oriented Programming, Restful APIs, Agile and Waterfall methodologies</p></br>
+				</div>
 			</div>
 		</a>
-
 		<a name="education">
 			<div>
-				<h1>Education</h1>
+				<h1 class="section">Education</h1>
 				<hr/>
-				<h3 class="h3pretty">Oregon State University</h3><img src="images/osu.png"></br>
+				<div style="margin-left: 20px; margin-bottom: 20px;">
 					<div id="contentBox">
 						<div class="column">
+							<h3 class="h3pretty">Oregon State University</h3><img src="images/osu.png"></br>
 							2015-2016 (2 years)</br> Corvallis, Oregon
 						</div>
+						<div class="column">
+							<h3 class="h3pretty">The University of Texas at Austin</h3><img src="images/ut.png"></br>
+							2007-2011 (4 years)</br>Austin, Texas
+						</div>
+					</div></br>
+
+					<div id="contentBox">
 						<div class="column">
 							<ul class="ulpretty">
 								<li>B.S. in Computer Science</li></br>
 								<li>Honors, 3.72 GPA</li></br>					
 							</ul>
-						</div>
-					</div></br>
-				<h3 class="h3pretty">The University of Texas at Austin</h3><img src="images/ut.png"></br>
-					<div id="contentBox">
-						<div class="column">
-							2007-2011 (4 years)</br>Austin, Texas
 						</div>
 						<div class="column">
 							<ul class="ulpretty">
@@ -131,38 +134,13 @@
 							</ul>
 						</div>
 					</div></br>		
-				<h3 class="h3pretty">Coursework Completed Through Oregon State University</h3></br>
-				<div id="contentBox">
-					<div class="column">
-						<ul class="ulpretty">
-							<li>Intro to Computer Science I</li></br>
-							<li>Intro to Computer Science II</li></br>
-							<li>Data Structures</li></br>
-							<li>Web Development</li></br>
-							<li>Discrete Structures in Computer Science</li></br>
-							<li>Computer Architecture & Assembly Language </li></br>
-							<li>Introduction to Databases </li></br>
-							<li>Operating Systems </li></br>								
-						</ul>		
-					</div>					
-					<div class="column">
-						<ul class="ulpretty">
-							<li>Software Engineering I </li></br>
-							<li>Software Engineering II </li></br>
-							<li>Intro to Computer Networks</li></br>
-							<li>Introduction to Usability Engineering</li></br>
-							<li>Analysis of Algorithms</li></br>	
-							<li>Mobile and Cloud Software Development </li></br>
-							<li>Software Projects</li></br>
-						</ul>		
-					</div>	
 				</div>
 			</div>
-
+		</a>
 		<a name="experience">
-			
-				<h1>Work Experience</h1>
-				<hr/>			
+				<h1 class="section">Work Experience</h1>
+				<hr/>		
+				<div style="margin-left: 20px; margin-bottom: 20px;">
 					<img src="images/c4c2.png"><img src="images/c4c3.png">
 					<div id="contentBox">
 						<div class="column">
@@ -200,40 +178,87 @@
 					</div></br>
 		
 					References available upon request.</br>
-			
-
+				</div>
+		</a>
 		<a name="about">
 			<div>
-				<h1>About Me</h1>
-				<hr/>			
+				<h1 class="section">About Me</h1>
+				<hr/>
+
+
+		
+					<div id="contentBox"style="width: 80%;">
+						<div class="column">
+				<div style="margin-left: 20px;">
 					<p style="margin-bottom: 20px; margin-top: 20px;">First and foremost, I love to learn. If someone is knowledgeable about a topic, I am absolutely interested in what they would like to say. Whether it is science, politics, literature, history, etc. I will always be willing to learn and love to understand different perspectives from my own. This is a huge reason I am so excited to be in this field. There is, and always will be, something to learn.</p>
 					<p style="margin-bottom: 20px; margin-top: 20px;">I love to build things. I love to plan an idea and see it to fruition. Obviously I love software development, as I am changing fields to follow my passion, but I also love to build just about anything. I can play with Legos for hour, but I also enjoy adult Legos like woodworking and general house upkeep. While I haven’t been trained in the field for TOO long, I have been playing around with C++ building little simple programs for fun since High School. </p>
 					<p style="margin-bottom: 20px; margin-top: 20px;">I am also a HUGE bleeding heart. I always want to help. I have volunteered with Habitat for Humanity, Boy Scouts of America, Boys and Girls Club, food banks, local and other organizations. I held a leadership role in a volunteer organization while attending UT. I am also an Eagle Scout which further displays my interest in my community as well. </p>
+
 					<p style="margin-bottom: 20px; margin-top: 20px;">Last, I am an outdoorsman. This one is a little more surprising, but being an Eagle Scout, and generally always pursuing adventure, I love to be with nature just as much as I love a good video game. I particularly enjoy hiking, camping, canoeing, rock-climbing, and just about anything else outside.</p>
-				<div class="nameplatediv"><img src="images/outdoors.jpg"></div>
+
 				</div>
-
-		<a name="readings">
-			<div>
-				<h1>Readings</h1>
-				<hr/>
-				<ul class="ulpretty">
-					<li>Eloquent JavaScript, Marijn Haverbeke</li></br>
-					<li>C++ Early Objects, Gaddis et al.</li></br>
-					<li>C Programming Language, Kernighan, Ritchie</li></br>
-					<li>Introduction to Algorithms, Cormen, Leiserson, Rivest, Stein</li></br>
-					<li>Discrete Mathematics and Its Applications, Rosen</li></br>
-					<li>Interaction Design, Sharp Rogers, Preece</li></br>				
-				</ul>
-
+						</div>
+						<div class="column">
+					<div class="nameplatediv" ><img src="images/outdoors.jpg"></div>
+						</div>
+					</div></br>
+					
 			</div>
-		<a name="where">
+		</a>					
+		<a name="school">
 			<div>
-				<h1>Work Location</h1>
+				<h1 class="section">Schoolwork</h1>
 				<hr/>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55459.95909844525!2d-95.62641151418977!3d29.68360489572665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640dd047bd19953%3A0x57f91beee10de474!2sAlief%2C+Houston%2C+TX!5e0!3m2!1sen!2sus!4v1488774979018" width="600" height="450" frameborder="0" style="text-align: center; border:0" allowfullscreen></iframe>
-				<p style="margin-bottom: 20px; margin-top: 10px;">Disclaimer: This is not imply where I live.</p>		
+				<div style="margin-left: 20px; margin-bottom: 20px;">
+					<h3 class="h3pretty">Coursework Completed Through Oregon State University</h3></br>
+					<div id="contentBox">
+						<div class="column">
+							<ul class="ulpretty">
+								<li>Intro to Computer Science I</li></br>
+								<li>Intro to Computer Science II</li></br>
+								<li>Data Structures</li></br>
+								<li>Web Development</li></br>
+								<li>Discrete Structures in Computer Science</li></br>
+								<li>Computer Architecture & Assembly Language </li></br>
+								<li>Introduction to Databases </li></br>
+								<li>Operating Systems </li></br>								
+							</ul>		
+						</div>					
+						<div class="column">
+							<ul class="ulpretty">
+								<li>Software Engineering I </li></br>
+								<li>Software Engineering II </li></br>
+								<li>Intro to Computer Networks</li></br>
+								<li>Introduction to Usability Engineering</li></br>
+								<li>Analysis of Algorithms</li></br>	
+								<li>Mobile and Cloud Software Development </li></br>
+								<li>Software Projects</li></br>
+							</ul>		
+						</div>		
+					</div>						
+						<h3 class="h3pretty" style="margin-top: 20px;">Readings</h3></br>				
+						<ul class="ulpretty">
+							<li>Eloquent JavaScript, Marijn Haverbeke</li></br>
+							<li>C++ Early Objects, Gaddis et al.</li></br>
+							<li>C Programming Language, Kernighan, Ritchie</li></br>
+							<li>Introduction to Algorithms, Cormen, Leiserson, Rivest, Stein</li></br>
+							<li>Discrete Mathematics and Its Applications, Rosen</li></br>
+							<li>Interaction Design, Sharp Rogers, Preece</li></br>				
+						</ul>
+						<h3 class="h3pretty" style="margin-top: 20px;">Some Projects</h3></br>		
+						<ul class="ulpretty" style="margin-bottom: 100px;">
+							<li>Currently working on a AAC communication device for children with disabilities.</li></br>
+							<li>Also working on a web scraper for a Magic: the Gathering webapp.</li></br>
+							<li>Database driven websites (a mock electronic medical records system, web application for distribution of donated foods and goods and a locator for volunteer organizations) using JavaScript, CSS, HTML, PHP and MySQL.</li></br>
+							<li>Web based API to manipulate various data, including user info, comments, and other chat services in a database.</li></br>
+							<li>Shell in C that supports several commands (exit, cd, status, CipherText, PlainText and other simple commands).</li></br>
+							<li>Fully cloud backed mobile applications utilizing HTML5/JavaScript and Google Cloud/AWS utilizing personally-created and public APIs. Focus on user accounts and sessions to restrict data availability and manipulation. Utilized a non-relational database offered through Google Cloud and Redis.</li></br>
+							<li>Multiple games and other programs utilizing C++.</li></br>
+							<li>Web based Tower-Defense game utilizing HTML, JavaScript of a man protecting his home from evil attacking robots.</li></br>				
+						</ul>				
+				</div>
 			</div>
+		</a>
 	</div>
 </div>
 <footer>
