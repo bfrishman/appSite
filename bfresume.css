@@ -31,7 +31,8 @@ footer {
 	margin-top: 0px;
 	margin-left: 20px;
 	padding-top: 0px;	
-	list-style-image: url("../www.benjaminfrishman.com/images/bullet.jpg");
+	list-style-image: url("https://s3.amazonaws.com/www.benjaminfrishman.com/images/bullet.jpg");
+	/*personal use url list-style-image: url("../www.benjaminfrishman.com/images/bullet.jpg");*/
 }
 
 .ulbar {
@@ -197,7 +198,8 @@ hr {
 	width: 1%;
 	height: 30px;
 	margin: 10px;
-	background-image: url('../www.benjaminfrishman.com/images/bar.jpg');
+	background-image: url('https://s3.amazonaws.com/www.benjaminfrishman.com/images/bar.jpg');
+	/*personal use url background-image: url('../www.benjaminfrishman.com/images/bar.jpg');*/
     border-radius: 25px;	
 }
 
