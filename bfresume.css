@@ -11,16 +11,41 @@ h1 {
 	margin-top: 0px;
 }
 
-.section {
-	background-color: #2C3A3D;;
-	color: white;
-	width: 100%;
+p {
+	/*font-family: Garamond, Georgia, serif;*/
+}
+
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	margin-top: 1px;
+	padding: 0;
+	border-color: purple;
+
 }
 
 footer {
 	padding: 20px;
 	background-color: #333;
 	color: white;
+}
+
+li {
+	float: left;
+}
+
+.spaced {
+	margin: 20px;
+}
+
+.section {
+	background-color: #2C3A3D;;
+	color: white;
+	width: 100%;
 }
 
 .h3pretty { 
@@ -35,6 +60,24 @@ footer {
 	/*personal use url list-style-image: url("../www.benjaminfrishman.com/images/bullet.jpg");*/
 }
 
+.ulwrapper{
+	text-align: center;
+}
+
+.ulwrapper ul {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	list-style-image: url("https://s3.amazonaws.com/www.benjaminfrishman.com/images/bullet.jpg");
+	/*personal use url list-style-image: url("../www.benjaminfrishman.com/images/bullet.jpg");*/
+}
+
+.ulwrapper ul {
+	padding: 2px 5px;
+	list-style-image: url("https://s3.amazonaws.com/www.benjaminfrishman.com/images/bullet.jpg");
+	/*personal use url list-style-image: url("../www.benjaminfrishman.com/images/bullet.jpg");*/
+}
+
 .ulbar {
 	list-style-type: none;
 	margin: 0;
@@ -45,10 +88,6 @@ footer {
 	right: 0;
 	top: 0;
 	width: 100%;
-}
-
-li {
-	float: left;
 }
 
 li a, .dropbtn {
@@ -74,7 +113,8 @@ li a, .dropbtn {
 #mainBox .lrgColumnG { /*gray box*/
     float: left;
     margin: 0;
-    width: 252px;		
+	display: inline-block;
+    width: 20%;		
 	/*background-color: gray;*/
 	margin-right: 0px;
 	/*background-image: url('../Resume website/SBbackground.jpg');*/
@@ -85,6 +125,7 @@ li a, .dropbtn {
 #mainBox .lrgColumnB { /*blue box*/
     float: left;
     margin-left: 0px;
+	display: inline-block;
     width: 80%;		
 	background-color: #e0e0d2; /*#717A8B;*/
 }
@@ -148,18 +189,6 @@ li.dropdown {
 	text-align: left;
 }
 
-hr {
-	display: block;
-	height: 1px;
-	border: 0;
-	border-top: 1px solid #ccc;
-	margin: 1em 0;
-	margin-top: 1px;
-	padding: 0;
-	border-color: purple;
-
-}
-
 .img-circle {
 	border-radius: 50%;
 }
@@ -212,95 +241,4 @@ hr {
 .pcenter {
 	text-align: center;
 	margin: 0;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*Borrowed from h3schools.com*/
-/* Popup container - can be anything you want */
-.popup {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-/* The actual popup */
-.popup .popuptext {
-    visibility: hidden;
-    width: 160px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 8px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -80px;
-}
-
-/* Popup arrow */
-.popup .popuptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-}
-
-/* Toggle this class - hide and show the popup */
-.popup .show {
-    visibility: visible;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
-}
-
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-    from {opacity: 0;} 
-    to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity:1 ;}
 }
