@@ -171,6 +171,19 @@ li a, .dropbtn {
     width: 50%;
 }
 
+#parentDiv {
+    margin-right:10px;
+    float:left;
+}
+.child1{
+    float:left;
+	width: 35%;
+}
+
+.child2{
+    float:right;
+}
+
 li a:hover, .dropdown:hover .dropbtn {
 	background-color: green;
 }
@@ -245,16 +258,19 @@ li.dropdown {
 }
 
 .welcomeP {
-	margin: 20px;
-	margin-top: 0px;
+	margin: 0px;
+	padding-top: 15%;
+	padding-left: 15%;
 	text-align: center;
+	width: 35%;
+	color: white;
+	font-size: 200%;
 }
 
 #myProgress {
 	width: 100%;
 	/*background-color: grey;*/
     border-radius: 25px;
-
 }
 
 .bar {
