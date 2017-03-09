@@ -29,9 +29,13 @@ hr {
 }
 
 footer {
-	padding: 20px;
+	padding: 10px;
 	background-color: #333;
 	color: white;
+	position: fixed; 
+	z-index:2; 
+	bottom: 0px; 
+	width: 100%;
 }
 
 li {
@@ -40,6 +44,8 @@ li {
 
 .spaced {
 	margin: 20px;
+	color: white;
+	font-size: 150%;
 }
 
 .section {
@@ -86,6 +92,7 @@ li {
 	position: fixed;
 	left: 0;
 	right: 0;
+	z-index:2; 
 	top: 0;
 	width: 100%;
 }
@@ -98,11 +105,26 @@ li a, .dropbtn {
 	text-decoration: none;
 }
 
-/*test starts here*/
+.skillDiv {
+	background-color: #ccddff;
+	height: 100%;
+}
+
+.eduDiv {
+	background-color: #ebd9c6;
+	height: 100%;
+}
+
+.expDiv {
+	background-color: #f2ccff;
+	height: 100%;
+}
+
 #mainBox {
     margin: 0;
     width: 100%;
 	overflow: auto;	
+	height: 100%;
 }
 
 #sidebarIMG {
@@ -110,11 +132,13 @@ li a, .dropbtn {
 	text-align: center;
 }
 
-#mainBox .lrgColumnG { /*gray box*/
+#mainBox .lrgColumnG { /*sidebar box*/
     float: left;
     margin: 0;
 	display: inline-block;
     width: 20%;		
+	padding-bottom: 200px;
+	height: 100%
 	/*background-color: gray;*/
 	margin-right: 0px;
 	/*background-image: url('../Resume website/SBbackground.jpg');*/
@@ -122,14 +146,18 @@ li a, .dropbtn {
 	/*box-shadow: 5px -10px 20px #2C3A3D;*/
 }
 
-#mainBox .lrgColumnB { /*blue box*/
+#mainBox .lrgColumnB { /*main box*/
     float: left;
     margin-left: 0px;
 	display: inline-block;
+	height: 100%;
+	position: absolute;
+	top: 48px;
+	bottom: 112px;
+	z-index:1; 
     width: 80%;		
 	background-color: #e0e0d2; /*#717A8B;*/
 }
-/*test ends here*/
 
 #contentBox {
     margin: 0;
@@ -214,6 +242,12 @@ li.dropdown {
 .nameplatetxt{
 		float: left;
 		color: white;
+}
+
+.welcomeP {
+	margin: 20px;
+	margin-top: 0px;
+	text-align: center;
 }
 
 #myProgress {

@@ -8,35 +8,25 @@
 	  <!-- Link for personal use<link rel="SHORTCUT ICON" href="favicon.ico" type="image/x-icon" />-->
 	  <link rel="SHORTCUT ICON" href="https://s3.amazonaws.com/www.benjaminfrishman.com/favicon.ico" type="image/x-icon" />	  
 	  
-	  <!--<script src="node_modules/jquery/dist/jquery.min.js"></script>-->
+	  <script src="node_modules/jquery/dist/jquery.min.js"></script>
 	  <script src="bfresume.js"></script>
-	  <!--<script type="text/javascript">
-		window.onload = function() {
-			$(document).ready(function(){
-					$("#skills").click(function(){
-					console.log("Hello");
-					$("#place").load("skills.html");
-				});
-			});
-		}
-        </script>-->
    </HEAD>
    
 <BODY>
 	<body class="bgimg">
 	<ul class="ulbar" id="myNavBar">
-	  <li></li>
-	  <li><a href="#education">Education</a></li>	  
-	  <li><a href="#experience">Work Experience</a></li>
-	  <li><a href="#about">About Me</a></li>
-	  <li><a href="#school">Schoolwork</a></li>	  
+	  <li><a id="skills" href="#skills">Skills</a></li>
+	  <li><a id="education" href="#education">Education</a></li>	  
+	  <li><a id="experience" href="#experience">Work Experience</a></li>
+	  <li><a id="about" href="#about">About Me</a></li>
+	  <li><a id="school" href="#school">Schoolwork</a></li>	 	  
 	  <li class="dropdown">
 		<a href="javascript:void(0)" class="dropbtn">Social Media</a>
 		<div class="dropdown-content">
 		  <a href="https://www.linkedin.com/in/benjamin-frishman-65a652ab">LinkedIn</a>
 		  <a href="https://twitter.com/Terrowirth">Twitter</a>
-		  <a href="https://www.facebook.com/ben.frishman.1">Facebook (You will need to friend request however)</a>
-		  <a href="https://www.github.com">Github (new)</a>
+		  <a href="https://www.facebook.com/ben.frishman.1">Facebook (You will need to friend request)</a>
+		  <a href="https://github.com/bfrishman">Github (New, soon to get more samples up on it.)</a>
 	    </div>
 	  </li>
 	  	  <li class="dropdown">
@@ -65,7 +55,7 @@
 	</ul>
 
 <div id="mainBox">	
-	<span id="sidebar" class="lrgColumnG">
+	<div id="sidebar" class="lrgColumnG">
 		<div id="sidebarIMG"><img class="img-circle" src="images/profile.jpg"></div>
 		<h1 style="text-align: center;  color: white; margin-bottom: 20px;">Benjamin Frishman</h1>
 		<hr/ style="width: 80%; text-align: center; border-color: white; margin: auto;">
@@ -85,195 +75,14 @@
 				<th>713-252-6444</th> 	
 			</tr>		
 		</table>		
-		<p style="color: white; margin: 20px;">Thanks for visiting my site! Feel free to email me if you would like to work together, have suggestions, or would just like to talk.</p>
-		<hr/ style="width: 80%; text-align: center; border-color: white; margin: auto;">
-	</span>
-	<span class="lrgColumnB">
-		<a name="forward">
-			<div>
-				<p style="margin:20px; background-color:green; color:white">This site is currently in under maintenance so some portions may not be super aesthetically pleasing at the moment. I am testing out several different layouts and frameworks so it will change. (Including Express, Handlebars, and some other stuff for learning purposes)</p>
-			</div>
-		</a>
-		<a name="skills">
-			<div>
-				<h1 class="section">Skills</h1>
-				<hr/>
-				<div style="margin-left: 20px; margin-bottom: 20px;">
-					<h2>Languages</h2>
-					<div id="myProgress">
-					  <div id="thisBar1" class="bar"><p class="bartext">JavaScript</p></div>
-					  <div id="thisBar2" class="bar"><p class="bartext">C++</p></div>
-					  <div id="thisBar3" class="bar"><p class="bartext">HTML</p></div>
-					  <div id="thisBar4" class="bar"><p class="bartext">CSS</p></div>	
-					  <div id="thisBar5" class="bar"><p class="bartext">Ability To Learn</p></div>					  
-					</div>	
-					<h2>Other Skills</h2>			
-					<p>Other languages used: Java, Python, C, PHP, C#</p></br>
-					<p>Some other technology used: jQuery, Express, Handlebars, Visual Studio, Node, VIM, and UNIX/Linux, MySQL, Google App Engine’s DB, AWS, Git, GitHub, Putty, FileZilla. Familiar with MASM, REDIS, Google Cloud, Wireshark, Pingplotter.</p></br>
-					<p>Assorted Skills: Object Oriented Programming, Restful APIs, Agile and Waterfall methodologies</p></br>
-				</div>
-			</div>
-		</a>
-		<a name="education">
-			<div>
-				<h1 class="section">Education</h1>
-				<hr/>
-				<div style="margin-left: 20px; margin-bottom: 20px;">
-					<table style="width:100%;">
-						<tr>
-							<th><h3 class="h3pretty">Oregon State University</h3></th>
-							<th><h3 class="h3pretty">The University of Texas at Austin</h3></th> 		
-						</tr>
-						<tr>
-							<th><img src="images/osu.png"></th>
-							<th><img src="images/ut.png"></th> 	
-						</tr>	
-						<tr>
-							<th>2015-2016 (2 years)</th> 
-							<th>2007-2011 (4 years)</th>	
-						</tr>		
-						<tr>
-							<th>Corvallis, Oregon</th>
-							<th>Austin, Texas</th> 	
-						</tr>	
-						<tr>
-							<th>
-								<div class="ulwrapper">
-									<ul>
-										<li>B.S. in Computer Science</li></br>
-										<li>Honors, 3.72 GPA</li></br>					
-									</ul>		
-								</div>
-							</th>
-							<th>
-								<div class="ulwrapper">
-									<ul>
-										<li>B.S. in Communication Sciences and Disorders</li></br>				
-									</ul>
-								</div>
-							</th> 	
-						</tr>								
-					</table>					
-				</div>
-			</div>
-		</a>
-		<a name="experience">
-				<h1 class="section">Work Experience</h1>
-				<hr/>		
-				<div style="margin-left: 20px; margin-bottom: 20px;">
-					<img src="images/c4c2.png"><img src="images/c4c3.png">
-					<div id="contentBox">
-						<div class="column">
-							Speech Language Pathologist Assistant</br> 2011-Current</br> Houston, Tx.
-						</div>
-						<div class="column">
-							<ul class="ulpretty">
-								<li>Research efficacious methods for treating patients.</li></br>
-								<li>Planned goals, treatment plan, timeframes and other aspectss of treatment.</li></br>
-								<li>Implemented and worked with children and families of children with disabilities, with a specialty regarding children diagnosed within the Autism spectrum and mental retardation.</li></br>						
-							</ul>
-						</div>
-					</div></br>
-					
-					<img src="images/gap.png">					
-					<div id="contentBox">
-						<div class="column">Sales Associate</br>2009-2011</br>Katy, Tx. </div>
-						<div class="column">
-							<ul class="ulpretty">
-								<li>Maintenance of products, cash registers and clientele.</li></br>
-								<li>Managed and directed shipments, receiving and unloading.</li></br>
-							</ul>
-						</div>
-					</div></br>
-					
-					<h3 class="h3pretty">Katy Janitorial Service</h3></br>
-					<div id="contentBox">
-						<div class="column">Custodian</br>2004-2007</br>Katy, Tx. </div>
-						<div class="column">
-							<ul class="ulpretty">
-								<li>Maintained cleanliness of various locations around city area.</li></br>							
-								<li>Waxing, mopping, dusting, other typical cleaning duties.</li></br>
-							</ul>
-						</div>
-					</div></br>
 		
-					References available upon request.</br>
-				</div>
-		</a>
-		<a name="about">
-			<div>
-				<h1 class="section">About Me</h1>
-				<hr/>
-				<div id="contentBox"style="width: 100%;">
-					<div class="column">
-						<div>
-							<p class="spaced">First and foremost, I love to learn. If someone is knowledgeable about a topic, I am absolutely interested in what they would like to say. Whether it is science, politics, literature, history, etc. I will always be willing to learn and love to understand different perspectives from my own. This is a huge reason I am so excited to be in this field. There is, and always will be, something to learn.</p>
-							<p class="spaced">I love to build things. I love to plan an idea and see it to fruition. Obviously I love software development, as I am changing fields to follow my passion, but I also love to build just about anything. I can play with Legos for hour, but I also enjoy adult Legos like woodworking and general house upkeep. While I haven’t been trained in the field for TOO long, I have been playing around with C++ building little simple programs for fun since High School. </p>
-							<p class="spaced">I am also a HUGE bleeding heart. I always want to help. I have volunteered with Habitat for Humanity, Boy Scouts of America, Boys and Girls Club, food banks, local and other organizations. I held a leadership role in a volunteer organization while attending UT. I am also an Eagle Scout which further displays my interest in my community as well. </p>
-							<p class="spaced">Last, I am an outdoorsman. This one is a little more surprising, but being an Eagle Scout, and generally always pursuing adventure, I love to be with nature just as much as I love a good video game. I particularly enjoy hiking, camping, canoeing, rock-climbing, and just about anything else outside.</p>
-						</div>
-					</div>
-					<div class="column">
-						<div class="nameplatediv" ><img src="images/outdoors.jpg"></div>
-					</div>
-				</div></br>	
-			</div>
-		</a>					
-		<a name="school">
-			<div>
-				<h1 class="section">Schoolwork</h1>
-				<hr/>
-				<div style="margin-left: 20px; margin-bottom: 20px;">
-					<h3 class="h3pretty">Coursework Completed Through Oregon State University</h3></br>
-					<div id="contentBox">
-						<div class="column">
-							<ul class="ulpretty">
-								<li>Intro to Computer Science I</li></br>
-								<li>Intro to Computer Science II</li></br>
-								<li>Data Structures</li></br>
-								<li>Web Development</li></br>
-								<li>Discrete Structures in Computer Science</li></br>
-								<li>Computer Architecture & Assembly Language </li></br>
-								<li>Introduction to Databases </li></br>
-								<li>Operating Systems </li></br>								
-							</ul>		
-						</div>					
-						<div class="column">
-							<ul class="ulpretty">
-								<li>Software Engineering I </li></br>
-								<li>Software Engineering II </li></br>
-								<li>Intro to Computer Networks</li></br>
-								<li>Introduction to Usability Engineering</li></br>
-								<li>Analysis of Algorithms</li></br>	
-								<li>Mobile and Cloud Software Development </li></br>
-								<li>Software Projects</li></br>
-							</ul>		
-						</div>		
-					</div>						
-						<h3 class="h3pretty" style="margin-top: 20px;">Readings</h3></br>				
-						<ul class="ulpretty">
-							<li>Eloquent JavaScript, Marijn Haverbeke</li></br>
-							<li>C++ Early Objects, Gaddis et al.</li></br>
-							<li>C Programming Language, Kernighan, Ritchie</li></br>
-							<li>Introduction to Algorithms, Cormen, Leiserson, Rivest, Stein</li></br>
-							<li>Discrete Mathematics and Its Applications, Rosen</li></br>
-							<li>Interaction Design, Sharp Rogers, Preece</li></br>				
-						</ul>
-						<h3 class="h3pretty" style="margin-top: 20px;">Some Projects</h3></br>		
-						<ul class="ulpretty" style="margin-bottom: 100px;">
-							<li>Currently working on a AAC communication device for children with disabilities.</li></br>
-							<li>Also working on a web scraper for a Magic: the Gathering webapp.</li></br>
-							<li>Database driven websites (a mock electronic medical records system, web application for distribution of donated foods and goods and a locator for volunteer organizations) using JavaScript, CSS, HTML, PHP and MySQL.</li></br>
-							<li>Web based Tower-Defense game utilizing HTML, JavaScript of a man protecting his home from evil attacking robots.</li></br>
-							<li>Web based API to manipulate various data, including user info, comments, and other chat services in a database.</li></br>
-							<li>Shell in C that supports several commands (exit, cd, status, CipherText, PlainText and other simple commands).</li></br>
-							<li>Fully cloud backed mobile applications utilizing HTML5/JavaScript and Google Cloud/AWS utilizing personally-created and public APIs. Focus on user accounts and sessions to restrict data availability and manipulation. Utilized a non-relational database offered through Google Cloud and Redis.</li></br>
-							<li>Multiple games and other programs utilizing C++.</li></br>				
-						</ul>				
-				</div>
-			</div>
-		</a>
-	</span>
+		<hr/ style="width: 80%; text-align: center; border-color: white; margin: auto;">
+	</div>
+	<div class="lrgColumnB">
+		<div style="height: 100%;">
+			<div id="place" style="height: 100%;"></div>
+		</div>
+	</div>
 </div>
 <footer>
 	<hr/ style="width: 35%; text-align: center; border-color: white; margin: auto;">

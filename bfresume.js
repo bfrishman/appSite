@@ -2,6 +2,31 @@ skills = [80, 70, 50, 50, 90];
 skillNum = 5;
 
 window.onload = function() {
+			$('head').append('<link rel="stylesheet" href="bfresume.css" type="text/css" />');
+			$("#place").load("default.html");	
+			$(document).ready(function(){
+			
+				$("#skills").click(function(){
+					$('head').append('<link rel="stylesheet" href="bfresume.css" type="text/css" />');
+					$("#place").load("skills.html");
+				});
+				$("#education").click(function(){
+					$('head').append('<link rel="stylesheet" href="bfresume.css" type="text/css" />');
+					$("#place").load("education.html");
+				});
+				$("#experience").click(function(){
+					$('head').append('<link rel="stylesheet" href="bfresume.css" type="text/css" />');
+					$("#place").load("experience.html");
+				});
+				$("#about").click(function(){
+					$('head').append('<link rel="stylesheet" href="bfresume.css" type="text/css" />');
+					$("#place").load("about.html");
+				});		
+				$("#school").click(function(){
+					$('head').append('<link rel="stylesheet" href="bfresume.css" type="text/css" />');
+					$("#place").load("school.html");
+				});					
+			});	
 	function setNamePlate(x){
 		x += "px";
 		document.getElementById("mainBox").style.marginTop = x;
@@ -20,45 +45,4 @@ window.onload = function() {
 		sideBarHeight(Mheight);
 	}
 	resizeSideBar();	
-	
-	function arrayToBar(skills){
-		for (var z = 0;z < skillNum; z++){
-			barName = "thisBar" + (z+1);
-			moveBar(barName, skills[z]);
-		}
-	}
-	arrayToBar(skills);
-	function moveBar(name,percent){
-		var elem = document.getElementById(name); 
-		var width = 1;
-		var id = setInterval(frame, 10);
-		function frame() {
-			if (width >= percent) {
-				clearInterval(id);
-			} else {
-				width++; 
-				elem.style.width = width + '%'; 
-			}
-		}
-	}
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-//borrowed from w3schools.com
-// When the user clicks on div, open the popup
-function myFunction() {
-	console.log("YO!");
-    var popup = document.getElementById("myPopup");
-    popup.classList.toggle("show");
-}
