@@ -1,4 +1,6 @@
 # appSite
 Resume Website
 
-Pretty typical stuff yo.
+Simple personal website.
+
+Lots of stuff left to do...
