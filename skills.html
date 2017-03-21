@@ -1,5 +1,7 @@
-	<div class="skillDiv">
-		<h1 style="color: white; background-color: #99bbff;">Skills</h1>
+<div class="skillDiv" style="height: 100%; background-image: url('./images/side.jpg'); background-repeat:no-repeat; background-size:cover;">
+	<h1 style="color: white; background-color: #00e6e6;">Skills</h1>
+	<hr/>	
+	<div style="width: 75%;">
 		<h2 style="margin: 20px;">Languages</h2>
 		<div id="myProgress">
 			<div id="thisBar1" class="bar"><p class="bartext">JavaScript</p></div>
@@ -9,14 +11,14 @@
 			<div id="thisBar5" class="bar"><p class="bartext">Ability To Learn</p></div>					  
 		</div>	
 		<h2 style="margin: 20px;">Other Skills</h2>			
-		<div style="margin: 20px; margin-left: 40px;">
-			<p>Other languages used: Java, Python, C, PHP, C#</p></br>
-			<p>Some other technology used: Node, MASM, VIM, and UNIX/Linux. MySQL, Google App Engine’s DB, REDIS and many more. Familiar with Google Cloud and AWS, Git, GitHub, Wireshark, Pingplotter, Putty, FileZilla</p></br>
-			<p>Assorted Skills: Object Oriented Programming, Restful APIs, Agile and Waterfall methodologies</p></br>
+		<div style="margin: 20px; margin-left: 40px; width: 60%;">
+			<p>Other languages used: Java, Python, C, PHP, C#</p><br />
+			<p>Some other technology used: Node, MASM, VIM, and UNIX/Linux. MySQL, Google App Engine’s DB, REDIS and many more. Familiar with Google Cloud and AWS, Git, GitHub, Wireshark, Pingplotter, Putty, FileZilla</p><br />
+			<p>Assorted Skills: Object Oriented Programming, Restful APIs, Agile and Waterfall methodologies</p><br />
 		</div>
 		<script>
 			function arrayToBar(skills){
-				for (var z = 0;z < skillNum; z++){
+				for(var z = 0; z < skillNum; z++) {
 					barName = "thisBar" + (z+1);
 					moveBar(barName, skills[z]);
 				}
@@ -36,6 +38,18 @@
 				}
 			}		
 		</script>
+		<div style="margin-left: 20px;  width: 75%;">
+			<h3 class="h3pretty" style="margin-top: 20px;">Projects</h3><br />		
+			<ul class="ulpretty" style="margin-bottom: 100px;">
+				<li>Currently working on a AAC communication device for children with disabilities.</li><br />
+				<li>Currently working on a web scraper for a Magic: the Gathering webapp.</li><br />
+				<li>Database driven websites (a mock electronic medical records system, web application for distribution of donated foods and goods and a locator for volunteer organizations) using JavaScript, CSS, HTML, PHP and MySQL.</li><br />
+				<li>Web based Tower-Defense game utilizing HTML, JavaScript of a man protecting his home from evil attacking robots.</li><br />
+				<li>Web based API to manipulate various data, including user info, comments, and other chat services in a database.</li><br />
+				<li>Shell in C that supports several commands (exit, cd, status, CipherText, PlainText and other simple commands).</li><br />
+				<li>Fully cloud backed mobile applications utilizing HTML5/JavaScript and Google Cloud/AWS utilizing personally-created and public APIs. Focus on user accounts and sessions to restrict data availability and manipulation. Utilized a non-relational database offered through Google Cloud and Redis.</li><br />
+				<li>Multiple games and other programs utilizing C++.</li><br />				
+			</ul>	
+		</div>
 	</div>
-
-
+</div>

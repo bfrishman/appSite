@@ -2,8 +2,9 @@
 
 * { margin:0; padding:0 }
 
-body{
+body, html {
    font-family: Arial, Helvetica, sans-serif;
+   height: 100%;
 }
 
 h1 {
@@ -62,8 +63,8 @@ li {
 	margin-top: 0px;
 	margin-left: 20px;
 	padding-top: 0px;	
-	list-style-image: url("https://s3.amazonaws.com/www.benjaminfrishman.com/images/bullet.jpg");
-	/*personal use url list-style-image: url("../www.benjaminfrishman.com/images/bullet.jpg");*/
+	list-style-image: url("https://s3.amazonaws.com/www.benjaminfrishman.com/images/bullet.png");
+	/*personal use url list-style-image: url("../www.benjaminfrishman.com/images/bullet.png");*/
 }
 
 .ulwrapper{
@@ -74,14 +75,14 @@ li {
 	display: inline-block;
 	margin: 0;
 	padding: 0;
-	list-style-image: url("https://s3.amazonaws.com/www.benjaminfrishman.com/images/bullet.jpg");
-	/*personal use url list-style-image: url("../www.benjaminfrishman.com/images/bullet.jpg");*/
+	list-style-image: url("https://s3.amazonaws.com/www.benjaminfrishman.com/images/bullet.png");
+	/*personal use url list-style-image: url("../www.benjaminfrishman.com/images/bullet.png");*/
 }
 
 .ulwrapper ul {
 	padding: 2px 5px;
-	list-style-image: url("https://s3.amazonaws.com/www.benjaminfrishman.com/images/bullet.jpg");
-	/*personal use url list-style-image: url("../www.benjaminfrishman.com/images/bullet.jpg");*/
+	list-style-image: url("https://s3.amazonaws.com/www.benjaminfrishman.com/images/bullet.png");
+	/*personal use url list-style-image: url("../www.benjaminfrishman.com/images/bullet.png");*/
 }
 
 .ulbar {
@@ -106,17 +107,17 @@ li a, .dropbtn {
 }
 
 .skillDiv {
-	background-color: #ccddff;
+	/*background-color: #ccddff;*/
 	height: 100%;
 }
 
 .eduDiv {
-	background-color: #ebd9c6;
+	/*background-color: #ebd9c6;*/
 	height: 100%;
 }
 
 .expDiv {
-	background-color: #f2ccff;
+	/*background-color: #f2ccff;*/
 	height: 100%;
 }
 
@@ -125,6 +126,7 @@ li a, .dropbtn {
     width: 100%;
 	overflow: auto;	
 	height: 100%;
+	display: block;
 }
 
 #sidebarIMG {
@@ -137,11 +139,8 @@ li a, .dropbtn {
     margin: 0;
 	display: inline-block;
     width: 20%;		
-	padding-bottom: 200px;
-	height: 100%
-	/*background-color: gray;*/
+	height: 100%;
 	margin-right: 0px;
-	/*background-image: url('../Resume website/SBbackground.jpg');*/
 	background-color: #2C3A3D;
 	/*box-shadow: 5px -10px 20px #2C3A3D;*/
 }
@@ -182,6 +181,7 @@ li a, .dropbtn {
 
 .child2{
     float:right;
+	width: 35%;
 }
 
 li a:hover, .dropdown:hover .dropbtn {
